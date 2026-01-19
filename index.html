@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIKDER GROUP | Secure Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Noto+Sans+Bengali:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gold: {
+                DEFAULT: '#d4af37',
+                light: '#f9e29c',
+                dark: '#b8860b',
+              },
+              dark: {
+                DEFAULT: '#0a0a0a',
+                glass: 'rgba(20, 20, 20, 0.8)',
+              }
+            },
+            fontFamily: {
+              cinzel: ['Cinzel', 'serif'],
+              bengali: ['Noto Sans Bengali', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #0a0a0a;
+        color: #f3e5ab;
+        font-family: 'Noto Sans Bengali', sans-serif;
+      }
+      .gold-gradient {
+        background: linear-gradient(135deg, #d4af37 0%, #f9e29c 50%, #b8860b 100%);
+      }
+      .glass-effect {
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(212, 175, 55, 0.1);
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "jspdf": "https://esm.sh/jspdf@^4.0.0",
+    "jspdf-autotable": "https://esm.sh/jspdf-autotable@^5.0.7",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.37.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
